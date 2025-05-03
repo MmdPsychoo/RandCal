@@ -26,7 +26,6 @@ public class ResultActivity extends AppCompatActivity {
 
         txtResult.setText(num1 + " " + op + " " + num2 + " = " + result);
 
-        // برگشت به صفحه اصلی بعد از ۵ ثانیه
         new Handler().postDelayed(() -> {
             Intent back = new Intent(ResultActivity.this, MainActivity.class);
             back.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

@@ -25,11 +25,10 @@ public class SplashActivity extends AppCompatActivity {
             return insets;
         });
 
-        // کد تاخیر ۵ ثانیه
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             Intent intent = new Intent(SplashActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
-        }, 5000); // 5000 میلی‌ثانیه = ۵ ثانیه
+        }, 5000);
     }
 }
